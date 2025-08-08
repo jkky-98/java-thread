@@ -1,6 +1,6 @@
 # Lock 인터페이스와 ReentrantLock 구현체
 
-- synchronized에 존재하는 문제 : 무한 대기 문제, 공정성 문제
+- synchronized에 존재하는 문제 : 무한 대기 문제, 공정성 문제(사실은 크게 고려하지 않아도 되지만 ReentrantLock에선 세부 컨트롤 가능)
 - ReentrantLock은 위 두 문제를 잘 해결해줌
 - lock()의 경우 인터럽트가 불가능하지만 lockInterruptibly()를 이용하여 인터럽트가 가능하게 만들어줌
 - ReentrantLock의 lock은 객체 모니터 락이 아니라 해당 구현체의 고유 기능적인 lock

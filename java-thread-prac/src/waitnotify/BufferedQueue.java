@@ -25,7 +25,7 @@ public class BufferedQueue {
         }
 
         queue.offer(task);
-        notifyAll();
+        notify();
     }
 
     public synchronized String get() {
@@ -39,7 +39,7 @@ public class BufferedQueue {
             }
         }
 
-        notifyAll();
+        notify();
         return queue.poll();
     }
 

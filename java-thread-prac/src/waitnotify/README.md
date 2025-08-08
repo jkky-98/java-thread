@@ -76,6 +76,7 @@
 10 put, 10 take, 5buffer, notify : 8(put먼저), 18(take먼저)
 100 put, 100 take, 5buffer, notifyAll : 248(put먼저), 511(take먼저)
 10 put, 10 take, 5buffer, notifyAll : 8(put먼저), 24(take먼저)
+1000 put, 1000 take, 5buffer, notify : 1989(put먼저), 1999(take먼저)
 
 ## 의의
 
