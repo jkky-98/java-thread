@@ -1,5 +1,6 @@
 package executor;
 
+import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -12,7 +13,6 @@ public class ExecutorServiceMain {
     public static void main(String[] args) {
         // 스레드 단순 생성 및 실행
         Thread[] threads = new Thread[nThreads];
-
         long tVanilla = System.currentTimeMillis();
         for (int i = 0; i < nThreads; i++) {
             threads[i] =  new Thread(new Task());
